@@ -188,18 +188,35 @@
 
   /* responsive style */
 
-  .hide{
-    display: none;
-  }
+  
 
   @media screen and (max-width: 576px){
     .skills-container ,
-     .resume-container, 
+     .resume-container,
+     .banner, 
      footer ,
+     nav,
+     nav > ul ,
      .about-item{
-        flex-direction: column;
+     flex-direction: column;
         
     }
+    nav>ul{
+        gap:120px ;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header , .banner{
+        background-image: none;
+    }
+
     footer, .about{
         padding: 20px;
     }
@@ -211,3 +228,11 @@
     }
 
   }
+
+  /* tablet devise specific media query */
+
+  /* @media screen and (min-width: 576px) and (max-width: 992px){
+    .banner{
+        flex-direction: column;
+    }
+  } */
